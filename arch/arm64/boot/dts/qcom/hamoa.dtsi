@@ -10139,6 +10139,10 @@
 			interrupts = <GIC_SPI 0 IRQ_TYPE_LEVEL_HIGH>;
 		};
 
+		&pdc {
+			compatible = "qcom,x1p42100-pdc", "qcom,pdc";
+		};
+
 		qfprom: efuse@221c8000 {
 			compatible = "qcom,x1e80100-qfprom", "qcom,qfprom";
 			reg = <0 0x221c8000 0 0x1000>;
